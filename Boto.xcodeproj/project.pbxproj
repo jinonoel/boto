@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3B22EFD41C12DF6700A574C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B22EFD31C12DF6700A574C1 /* AppDelegate.swift */; };
-		3B22EFD61C12DF6700A574C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B22EFD51C12DF6700A574C1 /* ViewController.swift */; };
 		3B22EFD91C12DF6700A574C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B22EFD71C12DF6700A574C1 /* Main.storyboard */; };
 		3B22EFDB1C12DF6700A574C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B22EFDA1C12DF6700A574C1 /* Assets.xcassets */; };
 		3B22EFDE1C12DF6700A574C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B22EFDC1C12DF6700A574C1 /* LaunchScreen.storyboard */; };
@@ -29,7 +28,6 @@
 /* Begin PBXFileReference section */
 		3B22EFD01C12DF6700A574C1 /* Boto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Boto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B22EFD31C12DF6700A574C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3B22EFD51C12DF6700A574C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3B22EFD81C12DF6700A574C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3B22EFDA1C12DF6700A574C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B22EFDD1C12DF6700A574C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -80,7 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				3B22EFD31C12DF6700A574C1 /* AppDelegate.swift */,
-				3B22EFD51C12DF6700A574C1 /* ViewController.swift */,
 				3B22EFD71C12DF6700A574C1 /* Main.storyboard */,
 				3B22EFDA1C12DF6700A574C1 /* Assets.xcassets */,
 				3B22EFDC1C12DF6700A574C1 /* LaunchScreen.storyboard */,
@@ -202,7 +199,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B22EFD61C12DF6700A574C1 /* ViewController.swift in Sources */,
 				3B22EFF41C13F26300A574C1 /* BotoTableViewController.swift in Sources */,
 				3B22EFD41C12DF6700A574C1 /* AppDelegate.swift in Sources */,
 			);
@@ -392,6 +388,7 @@
 				3B22EFEF1C12DF6700A574C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B22EFF01C12DF6700A574C1 /* Build configuration list for PBXNativeTarget "BotoTests" */ = {
 			isa = XCConfigurationList;
@@ -400,6 +397,7 @@
 				3B22EFF21C12DF6700A574C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
