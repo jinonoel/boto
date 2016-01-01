@@ -29,7 +29,16 @@ class BotoTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
+        self.refreshControl?.addTarget(self, action: "handleRefresh:", forControlEvents: UIControlEvents.ValueChanged)
+        
+        self.refreshControl?.beginRefreshing()
+        handleRefresh(self.refreshControl!)
+    }
+    
+    func handleRefresh(refreshControl: UIRefreshControl) {
+        NSLog("handle")
         updateStandings()
+        refreshControl.endRefreshing()
     }
     
     func updateStandings() {
@@ -50,7 +59,7 @@ class BotoTableViewController: UITableViewController {
                 let response: NSDictionary
                 try response = NSJSONSerialization.JSONObjectWithData(data!, options: []) as! NSDictionary;
                 
-                NSLog("Respone: " + String(response))
+                //NSLog("Respone: " + String(response))
                 
                 if response["status"] != nil && String(response["status"]!) == "success" {
                     dispatch_async(dispatch_get_main_queue(), {
@@ -82,7 +91,7 @@ class BotoTableViewController: UITableViewController {
                         
                         var row = -1
                         switch response["my_vote"] as! String {
-                        case "row":
+                        case "roxas":
                             row = 0
                         case "poe":
                             row = 1
@@ -91,7 +100,7 @@ class BotoTableViewController: UITableViewController {
                         case "duterte":
                             row = 3
                         default:
-                            NSLog("No my_vote")
+                            NSLog("No my_vote " + String(response["my_vote"]!))
                             return
                         }
                         
@@ -114,6 +123,8 @@ class BotoTableViewController: UITableViewController {
         });
         
         task.resume()
+        
+        NSLog("end standings")
     }
 
     override func didReceiveMemoryWarning() {
